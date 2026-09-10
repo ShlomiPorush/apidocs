@@ -1,0 +1,46 @@
+{
+  "name": "apidocs",
+  "version": "1.0.0",
+  "description": "Interactive API docs server powered by Stoplight Elements, with dark mode, base path support and Docker deployment",
+  "keywords": [
+    "stoplight",
+    "elements",
+    "openapi",
+    "api-docs",
+    "dark-mode",
+    "express",
+    "livereload",
+    "cli"
+  ],
+  "author": {
+    "name": "Shlomi Porush"
+  },
+  "contributors": [
+    {
+      "name": "Daniel Schröder",
+      "email": "daniel.schroeder@skriptfabrik.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShlomiPorush/apidocs.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@stoplight/elements": "8.4.5",
+    "chalk": "^5.2.0",
+    "chokidar": "^4.0.0",
+    "cors-anywhere": "~0.4.4",
+    "express": "^4.19.2",
+    "express-handlebars": "^8.0.1",
+    "handlebars": "^4.7.7",
+    "http-graceful-shutdown": "^3.1.12",
+    "livereload-js": "^4.0.1",
+    "minimist": "^1.2.7",
+    "send": "~0.19.0",
+    "ws": "^8.13.0"
+  },
+  "bin": {
+    "elements": "./elements-cli.mjs"
+  }
+}
