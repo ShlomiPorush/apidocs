@@ -1,0 +1,11 @@
+services:
+  apidocs:
+    build: .
+    container_name: apidocs
+    security_opt:
+      - no-new-privileges:true
+    command: 'preview --title="My API Docs" -w openapi.json'
+    volumes:
+      - ./data:/data:ro
+    ports:
+      - '8000:8000'
